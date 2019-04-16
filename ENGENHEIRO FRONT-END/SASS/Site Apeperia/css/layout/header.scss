@@ -5,10 +5,29 @@ header {
     height: 90px;
     width: 100%;
     position: absolute;
-  }
+
+    @media #{$mq-mobile} {
+        height: auto;
+
+        h1 {
+          max-width: 50%;
+          margin: 0 auto;
+
+          img {
+            max-width: 100%;
+            margin: .5em auto;
+            display: block;
+          } // fim do img
+        } // fim do h1
+      } //fim do media query
+  } //fim do header
   
   header .container {
     position: relative;
+
+    @media #{$mq-mobile} {
+      position: static;
+    }
   }
   
   .menu-principal {
