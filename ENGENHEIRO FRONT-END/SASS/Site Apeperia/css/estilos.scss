@@ -1,3 +1,8 @@
+$sprite-spacing: 5px;
+@import "sprite/*.png";
+
+// @import "plataformas/*.png";
+
 @import 'helpers/variaveis';
 @import 'helpers/mixins';
 
